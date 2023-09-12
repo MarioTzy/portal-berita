@@ -1,0 +1,61 @@
+lokasi file filenya:
+
+C:\xampp\htdocs\bukawarung1\(detail-berita.php , index.php)
+C:\xampp\htdocs\bukawarung1\admin\berita\berita_ img\
+C:\xampp\htdocs\bukawarung1\img\
+C:\xampp\htdocs\bukawarung1\database\db_bukawarung.sql
+C:\xampp\htdocs\bukawarung1\assets\css
+C:\xampp\htdocs\bukawarung1\assets\js
+C:\xampp\htdocs\bukawarung1\assets\style.css
+C:\xampp\htdocs\bukawarung1\admin\(dashboard.php , db.php , keluar.php , login.php , profil.php)
+C:\xampp\htdocs\bukawarung1\admin\berita\(edit-berita.php ,data-berita.php , proses-hapus-berita.php, tambah-berita.php)
+C:\xampp\htdocs\bukawarung1\admin\kategori\(data-kategori.php , edit-kategori.php , tambah-kategori.php)
+C:\xampp\htdocs\bukawarung1\admin\footer\(data-footer.php , edit-footer.php , tambah-footer.php)
+
+bagian-bagian database:
+
+(tb_berita):
+
+berita_id Primary	int(11)	AUTO_INCREMENT		
+category_id		int(11)	Foreign key	
+judul_berita		varchar(255)	
+berita_konten		text		
+berita_img		varchar(255)		
+berita_status		tinyint(1)			
+penulis_berita		varchar(255)		
+tanggal_upload		date			
+created_at	 	timestamp	
+view_count		int(11)	default 0
+
+(tb_category) :
+
+category_id Primary	int(11)	AUTO_INCREMENT		
+category_name		varchar(25)		
+created_at		datetime	
+
+(tb_footer) :
+
+footer_id Primary	int(11)	AUTO_INCREMENT		
+footer_title		varchar(255)		
+footer_content		text		
+
+
+(tb_subcategory)
+subcategory_idPrimary	int(11)	AUTO_INCREMENT	
+subcategory_name	varchar(255)	
+category_id		int(11)	Foreign key constraints
+created_at		datetime
+
+
+
+ ________________   ________
+|		 | |	    |
+|		 | |	    |
+|		 | |________|
+|		 | |	    | 
+|		 | |	    |
+|		 | |________|
+|		 | |	    |
+|		 | |	    |
+|________________| |________|
+

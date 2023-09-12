@@ -1,0 +1,625 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Style untuk container */
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style untuk navbar */
+.navbar {
+    background-color: #2d2d2d;
+    height: 50px;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00c8ff;
+}
+
+/* Add margin-right to the navbar-brand */
+.navbar-brand i {
+    margin-right: auto;
+}
+.navbar-brand i:hover{
+    color: #00c8ff;
+}
+/* Adjust margin-right and padding for the form */
+.navbar-nav .form-inline {
+    margin-right: 10px; /* Adjust this value as needed */
+    padding-right: 10px; /* Adjust this value as needed */
+}
+
+/* Center the search input vertically */
+.navbar-nav .form-inline .form-control {
+    vertical-align: middle;
+}
+
+/* Style untuk logo */
+.logo-wrapper {
+    display: flex;
+    justify-content: center; /* Memusatkan secara horizontal */
+    align-items: center; /* Memusatkan secara vertikal */
+    height: 100px; /* Sesuaikan dengan tinggi logo */
+    margin-bottom: 20px;
+}
+
+.logo-wrapper img {
+    max-width: 290px;
+}
+
+
+/* Style untuk kategori */
+.category-title {
+    background-color: #dedede;
+    color: #ff0000;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.category-title h4 {
+    font-size: 20px;
+}
+
+/* Style untuk berita besar (sebelah kiri) */
+.big-news {
+    padding: 20px;
+    width: 500px;
+    height: 570px; 
+    background-color: #ffffff;
+    border: none; /* Menghapus border */
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #000; /* Warna teks berita besar */
+    transition: transform 0.3s; /* Efek transisi saat hover */
+    text-align: justify; /* Justifikasi teks */
+    margin-bottom: 20px;
+}
+
+/* Mengubah warna teks di berita besar */
+.big-news h4,
+.big-news p,
+.big-news a {
+    color: #000;
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    margin-top: 17px;
+}
+.big-news h4{
+    font-weight: bold;
+}
+.big-news p {
+    font-size: 14px;
+    line-height: 1.2;
+}
+.big-news img {
+    width: 350px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+/* Style untuk kategori di berita besar */
+.big-news .category-title {
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Efek hover pada berita besar */
+.big-news:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style untuk berita kecil (sebelah kanan) */
+.small-news{
+    width: 480px;
+    height: 570px;
+    background-color: #ffffff;
+}
+.small-news-item {
+    border-bottom: none; /* Hapus garis bawah */
+    margin-top: 7px;
+}
+.small-news-item a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.small-news-item a:hover {
+    color: #007bff;
+}
+
+.small-news-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    
+}
+
+.small-news-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Optional: Mengatur konten ke tengah secara horizontal */
+    flex: 1;
+    background-color: #ffffff;
+    /* Sisanya adalah gaya lainnya yang Anda mungkin punya */
+}
+
+.small-news-title {
+    font-size: 15px;
+    color: #000;
+}
+
+.small-news-metadata {
+    font-size: 11px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Efek hover pada berita kecil */
+.small-news-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style untuk konten utama berita */
+.detail-berita-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 0 50px;
+}
+
+.detail-berita-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.detail-berita-content p {
+    font-size: 14px;
+    color: #555;
+    text-align: justify;
+    line-height: 1.5;
+}
+.tanggal{
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.detail-berita-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+/* Style untuk kategori-berita.php */
+/* Judul kategori */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style untuk judul kategori */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style untuk berita dalam kategori */
+.kategori-berita-item {
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    height: 580px;
+    width: 600px;
+}
+
+.kategori-berita-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.kategori-berita-item h4 a {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+}
+.kategori-berita-item h4{
+    width: 550px;
+}
+.kategori-berita-item h4 a:hover {
+    color: #007bff; /* Warna teks saat digulirkan (opsional) */
+}
+
+.kategori-info {
+    font-size: 14px;
+    color: #000000;
+    margin-top: 5px;
+}
+
+.kategori-berita-item p {
+    font-size: 14px;
+    color: #000000;
+    margin-top: 10px;
+    line-height: 1.5;
+    width: 500px;
+    text-align: justify;
+}
+
+.kategori-berita-item p a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.kategori-berita-item p a:hover {
+    color: #0056b3;
+}
+
+/* search  */
+.custom-content {
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    height: 650px;
+    width: 600px;
+}
+.custom-content img{
+    margin-bottom: 20px;
+}
+.custom-content h4 a {
+    font-size: 20px;
+    color: #333;
+    width: 500px;
+    text-decoration: none;
+}
+
+/* Gaya untuk tombol "Baca Selengkapnya" pada class "custom-content" */
+.custom-content p a {
+    color: #007bff;
+    text-decoration: none;
+}
+.custom-content p{
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+    line-height: 1.5;
+    width: 500px;
+}
+
+.custom-content p a:hover {
+    color: #0056b3;
+}
+
+/* Gaya untuk font hitam */
+.custom-content p,
+.custom-content h4,
+.custom-content .kategori-info {
+    color: #000; /* Warna teks hitam */
+}
+
+/* CSS untuk merapikan tombol navigasi dan memposisikannya di tengah */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a, .pagination span {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.pagination .current {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+/* Style untuk sidebar Terkini dan Terpopuler */
+.custom-sidebar {
+    float: right; /* Menggeser sidebar ke kanan */
+    width: 320px; /* Sesuaikan lebar sidebar dengan kebutuhan Anda */
+    margin-top: 18px;
+
+}
+
+.terkini-sidebar, .terpopuler-sidebar {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.terpopuler-sidebar{
+    margin-top: 50px;
+}
+.title-kategori{
+    background-color: #333;
+}
+.title-kategori h3{
+    color: #fff;
+    padding: 10px;
+}
+
+.terkini-title, .terpopuler-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.terkini-item, .terpopuler-item {
+    margin-bottom: 15px;
+}
+
+.terkini-item a, .terpopuler-item a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.terkini-item a:hover, .terpopuler-item a:hover {
+    color: #007bff;
+}
+
+.terkini-image, .terpopuler-image {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.terkini-text, .terpopuler-text {
+    padding-left: 10px;
+}
+
+.terkini-info, .terpopuler-info {
+    font-size: 12px;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Efek hover pada item */
+.terkini-item:hover, .terpopuler-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Clearfix untuk mengatasi masalah floating */
+.row.g-0::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* CSS untuk ikon media sosial */
+.sosial-icons {
+    position: fixed;
+    left: 0;
+    top: 50%; /* Untuk mengatur posisi vertikal ke tengah */
+    transform: translateY(-50%); /* Untuk mengatur posisi vertikal ke tengah */
+    z-index: 9999; /* Untuk memastikan ikon berada di atas konten lain */
+}
+
+/* CSS untuk setiap ikon media sosial */
+.sosial-icons a {
+    display: block;
+    margin: 10px 0; /* Jarak antara setiap ikon */
+    text-align: center; /* Untuk mengatur teks ke tengah */
+}
+
+/* CSS tambahan sesuai kebutuhan styling ikon */
+.sosial-icons a i {
+    font-size: 24px; /* Ukuran ikon */
+    color: #333; /* Warna ikon */
+    transition: color 0.3s, transform 0.3s; /* Efek transisi untuk perubahan warna dan skala saat hover */
+    transform-origin: center; /* Untuk mengatur titik tengah transformasi */
+}
+
+/* Efek hover untuk ikon media sosial */
+.sosial-icons a:hover i {
+    color: #007bff; /* Mengubah warna ikon saat dihover */
+    transform: scale(1.2); /* Membesar saat dihover */
+}
+
+
+/* Style untuk footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Efek hover pada tautan di footer */
+footer a:hover {
+    color: #00c8ff;
+}
+footer a{
+    color:#fff;
+    text-decoration: none;
+}
+.detail-footer{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color:#ffffff ;
+    justify-content: center;
+    width: 1000px;
+
+}
+.detail-footer h2{
+    margin : 20px 10px 40px;
+    font-weight: bold;
+}
+.detail-footer p{
+   margin: 20px 10px;
+   line-height: 1.5;
+}
+
+/* Clearfix untuk mengatasi float */
+.news-row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Tampilan responsif untuk navbar */
+@media (max-width: 768px) {
+    .navbar-toggler-icon {
+        display: block; /* Tampilkan ikon hamburger */
+    }
+
+    .navbar-nav {
+        display: none; /* Sembunyikan daftar menu */
+        flex-direction: column;
+        background-color: #2d2d2d; /* Warna latar belakang menu */
+        position: absolute;
+        width: 300px;
+        left: 0;
+        top: 50px; /* Jarak dari atas layar */
+        text-align: center;
+    }
+
+    .navbar-nav.active {
+        display: flex; /* Tampilkan daftar menu ketika tombol hamburger diklik */
+    }
+
+    .navbar-nav .nav-link {
+        margin: 10px 0; /* Jarak antar menu */
+    }
+}
+/* Tampilan responsif untuk berita utama (sebelah kiri) */
+@media (max-width: 768px) {
+    .big-news {
+        width: 100%; /* Lebarkan berita utama */
+        height: auto; /* Sesuaikan tinggi dengan konten */
+        padding: 10px; /* Kurangi padding */
+        margin-bottom: 10px; /* Kurangi margin bottom */
+    }
+
+    .big-news img {
+        width: 100%; /* Lebarkan gambar */
+        height: auto; /* Sesuaikan tinggi gambar */
+    }
+}
+
+/* Tampilan responsif untuk berita kecil (sebelah kanan) */
+@media (max-width: 768px) {
+    .small-news {
+        width: 100%; /* Lebarkan berita kecil */
+        height: auto; /* Sesuaikan tinggi dengan konten */
+    }
+
+    .small-news-item {
+        margin-top: 10px; /* Sesuaikan margin */
+    }
+
+    .small-news-item img {
+        width: 100%; /* Lebarkan gambar */
+        height: auto; /* Sesuaikan tinggi gambar */
+    }
+}
+/* Tampilan responsif untuk kategori berita */
+@media (max-width: 768px) {
+    .kategori-berita-item {
+        width: 100%; /* Lebarkan item */
+        height: auto; /* Sesuaikan tinggi dengan konten */
+        padding: 10px; /* Kurangi padding */
+        margin-bottom: 10px; /* Sesuaikan margin */
+    }
+
+    .kategori-berita-item h4 a {
+        width: 100%; /* Sesuaikan lebar tautan judul */
+    }
+}
+/* Tampilan responsif untuk konten kustom */
+@media (max-width: 768px) {
+    .custom-content {
+        width: 100%; /* Lebarkan konten kustom */
+        height: auto; /* Sesuaikan tinggi dengan konten */
+        padding: 10px; /* Kurangi padding */
+        margin-bottom: 10px; /* Sesuaikan margin */
+    }
+
+    .custom-content img {
+        width: 100%; /* Lebarkan gambar */
+        height: auto; /* Sesuaikan tinggi gambar */
+    }
+
+    .custom-content h4 a {
+        width: 100%; /* Sesuaikan lebar tautan judul */
+    }
+
+    .custom-content p {
+        width: 100%; /* Sesuaikan lebar teks */
+    }
+}
